@@ -1,4 +1,4 @@
-if (!instance_exists(obj_sun_guy)) camera_set_view_target(view_camera[0], obj_kirb);
+if (!instance_exists(obj_moon_guy)) camera_set_view_target(view_camera[0], obj_kirb);
 instance_destroy(obj_solid_2)
 vsp += grv
 

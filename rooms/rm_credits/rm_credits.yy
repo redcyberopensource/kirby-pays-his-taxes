@@ -17,8 +17,8 @@
   ],
   "name":"rm_credits",
   "parent":{
-    "name":"World",
-    "path":"folders/Rooms/World.yy",
+    "name":"DONT",
+    "path":"folders/Rooms/DONT.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

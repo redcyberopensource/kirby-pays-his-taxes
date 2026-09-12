@@ -8,5 +8,5 @@ for (var i = 0; i < _count; i++) {
     a.image_blend = c_gray;
     a.hspeed = random_range(-8, 8);
     a.gravity = 0.2
-	a.vspeed = random_range(-1, -12)
+	a.vspeed = random_range(-3, -12)
 }

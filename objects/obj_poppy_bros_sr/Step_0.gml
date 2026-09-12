@@ -50,5 +50,6 @@ if (hp <= 0)
 	hsp = -hsp/2
 	if (global.can_play_music = true) play_music(song_end, true)
 	obj_boss_door.image_index = 1
+	instance_create_depth(x, y, 0, obj_camera);
 	instance_change(obj_poppy_bros_sr_dead, false)
 }

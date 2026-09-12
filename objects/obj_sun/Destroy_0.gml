@@ -1,4 +1,4 @@
-var _count = 40; // how many to spawn
+var _count = 10; // how many to spawn
 
 with obj_moon_guy alarm[4] = 20
 
