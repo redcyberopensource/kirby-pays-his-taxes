@@ -31,6 +31,8 @@ function settings_load(){
 		break;
 	}
 	
+	global.float_hold = (ini_read_real("Settings", "Hold_to_float", false));
+	
 	ini_close()
 	
 	settings_save()

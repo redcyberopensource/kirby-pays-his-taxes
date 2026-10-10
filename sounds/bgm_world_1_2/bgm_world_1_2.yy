@@ -9,7 +9,7 @@
   "bitRate":192,
   "compression":3,
   "conversionMode":0,
-  "duration":171.33713,
+  "duration":171.33714,
   "name":"bgm_world_1_2",
   "parent":{
     "name":"World 1",

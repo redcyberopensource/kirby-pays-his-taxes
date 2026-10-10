@@ -17,8 +17,8 @@
   ],
   "name":"rm_game_over",
   "parent":{
-    "name":"DONT",
-    "path":"folders/Rooms/DONT.yy",
+    "name":"DONT DELETE",
+    "path":"folders/Rooms/DONT DELETE.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

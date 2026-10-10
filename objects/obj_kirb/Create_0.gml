@@ -12,6 +12,7 @@ vsp_fall_max = 10;
 hsp_forced = 0;
 vsp_jump = 6;
 vsp_float = 3;
+vsp_float_held = 2;
 
 can_float = true;
 can_move = true;
