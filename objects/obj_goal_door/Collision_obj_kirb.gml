@@ -1,4 +1,4 @@
-if (keyboard_check(vk_up))
+if (keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0, gp_padu))
 {
 	room_goto(global.hub_room)
 	global.level[hub_door] = true

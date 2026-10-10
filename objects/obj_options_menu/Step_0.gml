@@ -1,11 +1,11 @@
 //select
-up_key = keyboard_check_pressed(vk_up)
-down_key = keyboard_check_pressed(vk_down)
-key_left_pressed = keyboard_check_pressed(vk_left)
-key_right_pressed = keyboard_check_pressed(vk_right)
-key_left = keyboard_check(vk_left)
-key_right = keyboard_check(vk_right)
-key_accept = (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")))
+up_key = (keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0, gp_padu))
+down_key = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd)
+key_left_pressed = keyboard_check_pressed(vk_left) || gamepad_button_check_pressed(0, gp_padl)
+key_right_pressed = keyboard_check_pressed(vk_right) || gamepad_button_check_pressed(0, gp_padr)
+key_left = keyboard_check(vk_left) || gamepad_button_check(0, gp_padl)
+key_right = keyboard_check(vk_right) || gamepad_button_check(0, gp_padr)
+key_accept = (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_face1))
 
 pos += down_key - up_key;
 
@@ -70,6 +70,13 @@ switch (pos)
 		}
 	break;
 	
+	case 5:
+		if (key_accept) || (key_left_pressed) || (key_right_pressed)
+		{
+			global.float_hold = !global.float_hold;
+		}
+	break;
+	
 	case 6:
 		if (key_accept)
 		{
@@ -91,4 +98,10 @@ switch (global.window_size)
 	case 3:
 		window_set_size(1440,1080);
 	break;
+}
+
+if (keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face2))
+{
+	room_goto(rm_menu);
+	settings_save();
 }

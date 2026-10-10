@@ -35,6 +35,7 @@ if (keyboard_check_pressed(vk_enter)) || (keyboard_check_pressed(ord("Z")) || ga
 			else
 			{
 				global.file = "save1.txt"
+				game_reset()
 				room_goto(rm_hub_1);
 			}
 		break;
@@ -48,6 +49,7 @@ if (keyboard_check_pressed(vk_enter)) || (keyboard_check_pressed(ord("Z")) || ga
 			else
 			{
 				global.file = "save2.txt"
+				game_reset()
 				room_goto(rm_hub_1);
 			}
 		break;
@@ -61,8 +63,14 @@ if (keyboard_check_pressed(vk_enter)) || (keyboard_check_pressed(ord("Z")) || ga
 			else
 			{
 				global.file = "save3.txt"
+				game_reset();
 				room_goto(rm_hub_1);
 			}
 		break;
 	}
+}
+
+if (keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face2))
+{
+	room_goto(rm_menu);
 }

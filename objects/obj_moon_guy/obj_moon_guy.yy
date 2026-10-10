@@ -47,6 +47,9 @@
     "name":"spr_moon_guy",
     "path":"sprites/spr_moon_guy/spr_moon_guy.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_moon_guy",
+    "path":"sprites/spr_moon_guy/spr_moon_guy.yy",
+  },
   "visible":true,
 }

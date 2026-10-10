@@ -46,6 +46,7 @@ else
 {
 	draw_text(x+op_border+450, y+op_border+op_space*3, "Off")
 }
+
 if (global.window_size = 1)
 {
 	draw_text(x+op_border+450, y+op_border+op_space*4, "640x480")
@@ -57,4 +58,13 @@ else if (global.window_size = 2)
 else if (global.window_size = 3)
 {
 	draw_text(x+op_border+450, y+op_border+op_space*4, "1440x1080")
+}
+
+if (global.float_hold = true)
+{
+	draw_text(x+op_border+450, y+op_border+op_space*5, "Hold")
+}
+else if (global.float_hold = false)
+{
+	draw_text(x+op_border+450, y+op_border+op_space*5, "Press")
 }

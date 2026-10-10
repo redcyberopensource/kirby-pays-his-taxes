@@ -42,6 +42,9 @@
     "name":"spr_sun_guy",
     "path":"sprites/spr_sun_guy/spr_sun_guy.yy",
   },
-  "spriteMaskId":null,
+  "spriteMaskId":{
+    "name":"spr_sun_guy",
+    "path":"sprites/spr_sun_guy/spr_sun_guy.yy",
+  },
   "visible":true,
 }

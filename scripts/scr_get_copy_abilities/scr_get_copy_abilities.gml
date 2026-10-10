@@ -520,7 +520,7 @@ if (mouth_full = false) && (!float)
 			}
 		break;
 		
-		case 8:
+		case 8: //Smash Ability
 			if (key_action) && (!float) && (can_use_ability) && (place_meeting(x, y+1, obj_solid)) && (!smash_jab) && !(key_left || key_right)
 			{
 				smash_jab = true;
@@ -578,6 +578,7 @@ if (mouth_full = false) && (!float)
 			if (key_action_pressed) && (!float) && (can_use_ability) && (!place_meeting(x, y+1, obj_solid))
 			{
 				smash_spin = true;
+				instance_create_depth(x, y, 0, obj_smash_spin_hitbox);
 				alarm[0] = 20
 			}
 			if (smash_spin)

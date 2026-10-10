@@ -29,8 +29,8 @@
   ],
   "name":"rm_crack_screen",
   "parent":{
-    "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "name":"DONT DELETE",
+    "path":"folders/Rooms/DONT DELETE.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

@@ -85,11 +85,13 @@ if (paused) && (room != rm_hub_1)
 {
 	instance_create_depth(display_get_gui_width()/2,display_get_gui_height()-50,-999, obj_pause_menu)
 }
-
-if (!paused) && (instance_exists(obj_pause_menu))
+if (paused) && (room = rm_hub_1)
 {
-	with obj_pause_menu
-	{
-		instance_destroy()
-	}
+	instance_create_depth(display_get_gui_width()/2,display_get_gui_height()-50,-999, obj_pause_menu_hub)
+}
+
+if (!paused) && ((instance_exists(obj_pause_menu)) || (instance_exists(obj_pause_menu_hub)))
+{
+	instance_destroy(obj_pause_menu);
+	instance_destroy(obj_pause_menu_hub);
 }

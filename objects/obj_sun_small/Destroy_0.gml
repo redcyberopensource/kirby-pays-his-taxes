@@ -1,6 +1,6 @@
 with obj_sun_circle instance_destroy()
 
-var _count = 10; // how many to spawn
+var _count = 5; // how many to spawn
 
 with obj_moon_guy alarm[4] = 20
 

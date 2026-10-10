@@ -4,6 +4,5 @@ if (kirb_inside = true)
 	view_set_visible(1, false)
 	sprite_index = spr_kirb_minecart_empty
 	instance_create_depth(x, y, 0, obj_kirb)
-	with obj_kirb vsp = -20
 	alarm[0] = 40
 }

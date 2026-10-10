@@ -7,6 +7,7 @@ key_down = keyboard_check(vk_down) || gamepad_button_check(0, gp_padd)
 key_up = keyboard_check(vk_up) || gamepad_button_check(0, gp_padu)
 key_up_pressed = keyboard_check_pressed(vk_up) || gamepad_button_check_pressed(0, gp_padu)
 key_jump = keyboard_check_pressed(ord("Z")) || gamepad_button_check_pressed(0, gp_face1)
+key_jump_held = keyboard_check(ord("Z")) || gamepad_button_check(0, gp_face1)
 key_down_pressed = keyboard_check_pressed(vk_down) || gamepad_button_check_pressed(0, gp_padd)
 key_action_pressed = keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face3)
 key_action = keyboard_check(ord("X")) || gamepad_button_check(0, gp_face3)
@@ -120,8 +121,16 @@ if (!place_meeting(x, y+sign(grv), obj_solid)) && (key_jump) && (can_float = tru
 	spr_fall = spr_float_idle_default;
 	can_dash = false;
 	vsp_fall_max = (2.5 * sign(grv));
-	
-	audio_play_sound(snd_kirb_float, 5, false)
+
+	audio_play_sound(snd_kirb_float, 5, false);
+}
+//Float hold
+if (global.float_hold)
+{
+	if (!place_meeting(x, y+sign(grv), obj_solid)) && (key_jump_held) && (float) && (global.powerup != 9)
+	{
+		vsp = (vsp_float_held * -sign(grv));
+	}
 }
 else if (key_jump) && (!place_meeting(x, y+sign(grv), obj_solid)) && (global.powerup = 9)
 {

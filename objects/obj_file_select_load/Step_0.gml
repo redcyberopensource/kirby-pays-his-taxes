@@ -63,3 +63,8 @@ if (keyboard_check_pressed(vk_enter)) || (keyboard_check_pressed(ord("Z")) || ga
 		break;
 	}
 }
+
+if (keyboard_check_pressed(ord("X")) || gamepad_button_check_pressed(0, gp_face2))
+{
+	room_goto(rm_menu);
+}

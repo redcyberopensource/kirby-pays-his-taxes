@@ -13,6 +13,7 @@ instance_destroy(obj_cutter_dash_hitbox)
 instance_destroy(obj_fire_burning_hit)
 instance_destroy(obj_sword_slash_hit)
 instance_destroy(obj_sword_upwards_hit)
+instance_destroy(obj_smash_spin_hitbox);
 acc = 0.2
 grv = current_grv;
 cutter_dash = false;

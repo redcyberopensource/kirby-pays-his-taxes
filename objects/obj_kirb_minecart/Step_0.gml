@@ -82,7 +82,7 @@ if ((place_meeting(x, y, par_enemy)) || (place_meeting(x, y, par_hazard))) && (c
 	}
 }
 
-if (spd != 0) && (hsp = 0)
+if (spd != 0) && (hsp = 0) && (kirb_inside = false)
 {
 	instance_destroy()
 }
