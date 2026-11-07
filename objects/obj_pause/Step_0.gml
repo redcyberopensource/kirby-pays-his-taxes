@@ -81,11 +81,11 @@ if (keyboard_check_pressed(vk_up) || gamepad_button_check(0, gp_padu)) && (pause
 	page = 0
 }
 
-if (paused) && (room != rm_hub_1)
+if (paused) && (room != global.hub_room)
 {
 	instance_create_depth(display_get_gui_width()/2,display_get_gui_height()-50,-999, obj_pause_menu)
 }
-if (paused) && (room = rm_hub_1)
+if (paused) && (room = global.hub_room)
 {
 	instance_create_depth(display_get_gui_width()/2,display_get_gui_height()-50,-999, obj_pause_menu_hub)
 }

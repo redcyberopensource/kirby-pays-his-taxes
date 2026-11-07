@@ -11,8 +11,8 @@
   "name":"obj_room_change_trigger",
   "overriddenProperties":[],
   "parent":{
-    "name":"ZA WORLDO",
-    "path":"folders/Objects/ZA WORLDO.yy",
+    "name":"ZA WORUDO",
+    "path":"folders/Objects/ZA WORUDO.yy",
   },
   "parentObjectId":null,
   "persistent":false,

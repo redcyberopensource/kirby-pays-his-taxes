@@ -10,8 +10,8 @@
   "name":"obj_music",
   "overriddenProperties":[],
   "parent":{
-    "name":"ZA WORLDO",
-    "path":"folders/Objects/ZA WORLDO.yy",
+    "name":"ZA WORUDO",
+    "path":"folders/Objects/ZA WORUDO.yy",
   },
   "parentObjectId":null,
   "persistent":true,

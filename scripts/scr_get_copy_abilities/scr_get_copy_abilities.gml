@@ -127,8 +127,8 @@ if (mouth_full = false) && (!float)
 			if (burning) && (place_meeting(x+hsp, y, obj_solid))
 			{
 				burning = false
-				hsp = -1*image_xscale
-				vsp = (-4 * (sign(grv)))
+				hsp = -2*image_xscale
+				vsp = (-4 * (sign(current_grv)))
 				spr_jump = spr_fall_default;
 				spr_fall = spr_fall_default;
 				spr_idle = spr_idle_default;
@@ -377,7 +377,7 @@ if (mouth_full = false) && (!float)
 				alarm[0] = 16;
 			}
 			
-			if (key_action_pressed) && (!float) && (key_down) && (can_use_ability) && (!ninja_dive)
+			if (key_action_pressed) && (!float) && (key_down) && (can_use_ability) && (!ninja_dive) && (!place_meeting(x, y+1, obj_solid))
 			{
 				ninja_dive = true
 			}
@@ -483,7 +483,7 @@ if (mouth_full = false) && (!float)
 				alarm[0] = 30
 			}
 			
-			if (ninja_dash)
+			if (ninja_dash) //&& (!place_meeting(x+sign(hsp), y, obj_solid))
 			{
 				sprite_index = spr_kirb_ninja_dash;
 				spr_idle = spr_kirb_ninja_dash;
@@ -499,6 +499,20 @@ if (mouth_full = false) && (!float)
 				can_jump = false;
 				can_turn = false;
 				can_float = false
+			}
+			
+			if (ninja_dash) && (place_meeting(x+sign(hsp), y, obj_solid))
+			{
+				ninja_dash = false
+				hsp = -5*image_xscale
+				vsp = -4 * (sign(current_grv))
+				spr_jump = spr_fall_default;
+				spr_fall = spr_fall_default;
+				spr_idle = spr_idle_default;
+				spr_walk = spr_walk_default;
+				spr_run = spr_run_default;
+				
+				alarm[0] = 5
 			}
 		break;
 		

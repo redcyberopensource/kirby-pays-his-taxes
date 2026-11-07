@@ -18,5 +18,7 @@ function load_game(filename){
 	
 	ini_close()
 	
+	room_set_persistent(global.hub_room, false);
+	
 	room_goto(global.hub_room)
 }

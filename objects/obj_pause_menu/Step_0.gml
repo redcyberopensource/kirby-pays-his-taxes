@@ -28,7 +28,7 @@ switch (option)
 		{
 			instance_activate_all()
 			with obj_pause paused = false
-			room_goto(rm_hub_1)
+			room_goto(global.hub_room)
 		}
 	break;
 }

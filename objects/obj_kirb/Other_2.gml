@@ -15,3 +15,11 @@ global.level[2] = false;
 global.level[3] = false;
 global.level[4] = false;
 global.level[5] = false;
+
+//Bonus World 1 (skip 6-8 because unused and dont want to delete just in case)
+global.level[9] = true;
+global.level[10] = false;
+global.level[11] = false;
+global.level[12] = false;
+global.level[13] = false;
+global.level[14] = false;

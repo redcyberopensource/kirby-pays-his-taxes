@@ -1,2 +1,3 @@
-instance_create_layer(x, y, "Instances", obj_kirb)
+instance_create_depth(x, y, -1, obj_kirb)
+view_visible[1] = false;
 instance_destroy()

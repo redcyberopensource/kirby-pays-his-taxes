@@ -1,1 +1,0 @@
-rm_trigger = rm_hub_b1

@@ -587,3 +587,12 @@ else if (!place_meeting(x, y+sign(grv), obj_solid))
 }
 
 image_angle += rot;
+
+if (room = rm_hub_b1)
+{
+	global.hub_room = rm_hub_b1;
+}
+else if (room = rm_hub_1)
+{
+	global.hub_room = rm_hub_1;
+}

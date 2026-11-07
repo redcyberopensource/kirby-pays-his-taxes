@@ -9,8 +9,8 @@
   "name":"obj_camera_control",
   "overriddenProperties":[],
   "parent":{
-    "name":"ZA WORLDO",
-    "path":"folders/Objects/ZA WORLDO.yy",
+    "name":"ZA WORUDO",
+    "path":"folders/Objects/ZA WORUDO.yy",
   },
   "parentObjectId":null,
   "persistent":false,

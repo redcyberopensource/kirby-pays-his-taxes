@@ -28,6 +28,7 @@ switch (option)
 		{
 			instance_activate_all()
 			with obj_pause paused = false
+			room_persistent = false;
 			room_goto(rm_menu)
 		}
 	break;
